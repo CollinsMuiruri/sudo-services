@@ -5,3 +5,7 @@ h2 {
 .requirements {
   text-align: center;
 }
+
+.dist {
+  show: none;
+}

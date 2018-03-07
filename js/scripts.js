@@ -22,7 +22,7 @@ function Contact(Name, Identification, Phone, Email, Residence) {
 	this.Residence = Residence;
 };
 Contact.prototype.fullName = function() {
-	return this.Name + this.Identification + this.Phone + this.Email + this.Residence;
+	return this.Name + " " + this.Identification + " " + this.Phone + " " + this.Email + " " + this.Residence;
 };
 console.log("qwerty");
 // user interface logic
