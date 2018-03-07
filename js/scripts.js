@@ -25,6 +25,7 @@ Contact.prototype.fullName = function() {
 	return this.Name + " " + this.Identification + " " + this.Phone + " " + this.Email + " " + this.Residence;
 };
 console.log("qwerty");
+
 // user interface logic
 $(document).ready(function() {
 	$("form#blanks").submit(function(event) {
@@ -48,5 +49,12 @@ $(document).ready(function() {
 		// $("#Residence").val("");
 
 
+	});
+
+	$("#myModal").click(function() {
+		$("#modal").show();
+	});
+	$(".close").click(function() {
+		$("#modal").hide();
 	});
 });

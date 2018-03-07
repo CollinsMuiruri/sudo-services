@@ -21,36 +21,65 @@
       <form id="blanks">
         <div class="form-group">
           <label for="person1">Name</label>
-          <input id="person1" placeholder="Name" class="form-control" type="text">
+          <input id="person1" placeholder="Name" class="form-control" type="text" required/>
         </div>
         <div class="form-group">
           <label for="Identification">ID</label>
-          <input id="Identification" placeholder="ID" class="form-control" type="text">
+          <input id="Identification" placeholder="ID" class="form-control" type="text" required/>
         </div>
         <div class="form-group">
           <label for="Phoneno">Phone</label>
-          <input id="Phoneno" placeholder="Phone no." class="form-control" type="text">
+          <input id="Phoneno" placeholder="Phone no." class="form-control" type="text" required/>
         </div>
         <div class="form-group">
           <label for="Email">Email</label>
-          <input id="Email" placeholder="your email" class="form-control" type="text">
+          <input id="Email" placeholder="your email" class="form-control" type="text" required/>
         </div>
         <div class="form-group">
           <label for="Residence">Location</label>
-          <input id="Residence" placeholder="location" class="form-control" type="text">
+          <input id="Residence" placeholder="location" class="form-control" type="text" required/>
         </div>
-        <button type="submit" class="btn">There you go :)</button>
+        <button type="submit" class="btn" data-toggle="modal" id="myModal">There you go :)</button>
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">congratulations</h4>
+            </div>
+            <div class="modal-body">
+              <p>congratulations blablabla, you will now be redirected to our services page</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-default" data-dismiss="modal" name="button">Services</button>
+            </div>
+          </div>
+          <!-
+
+        </div>
       </form>
 
-      <li class='contact'></li>
-    </div>
-
-    <div class="col-md-6">
 
 
 
-    </div>
-    <a href="wtf.html"><button class="homebutton">Go Home</button></a>
+
+
+
+
+
+
+      <div class="dist">
+
+
+        <li class='contact'></li>
+      </div>
+      </div>
+
+      <div class="col-md-6">
+
+
+
+      </div>
+      <a href="wtf.html"><button class="homebutton">Go Home</button></a>
 </body>
 
 </html>
