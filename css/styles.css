@@ -21,8 +21,7 @@ font-family: 'Pacifico', cursive;
   transition: all 2.0s;
 }
 body#index{
-  background-color: black;
-  background-image: url(../images/hop.jpeg);
+  background-image: url(../images/dom.jpg);
   margin: 0;
   padding: 0;
 }
@@ -126,11 +125,12 @@ nav ul li a {
   padding: 10px 20px;
   margin: blue;
   font-size: 28px;
+  width: 20em;
+  height: 2em;
 }
 #get-services:hover{
-  background-color:blue;
+  background-color:#7c848c;
   border: 3px blue;
-
   transition: 0.3s;
 }
 
@@ -141,6 +141,8 @@ nav ul li a {
   padding: 10px 20px;
   margin: white;
   font-size: 28px;
+  width: 20em;
+  height: 2em;
 }
 #offer-services:hover{
   background-color:cyan;
@@ -155,17 +157,30 @@ nav ul li a {
 .menu {
   position: fixed;
   float: right;
-  background:transparent;
-  padding-left:  100px;
+  background-color: black;
+  padding-left:  300px;
 }
-/*h2 {
+h2 {
   text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: yellow;
 }
 
 .requirements {
   text-align: center;
+  font-family: 'Indie flower',cursive;
+  color: cyan;
 }
 
 .dist {
   show: none;
-}*/
+  font-family: 'Indie flower',cursive;
+}
+#dav {
+  font-family: 'Indie flower',cursive;
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #7c848c;
+  color: purple;
+}
