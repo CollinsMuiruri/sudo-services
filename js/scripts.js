@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+//levi old
 //business logic
 function Offer(name, id, service, location, contact, email, website) {
   this.fullName = name;
@@ -8,7 +8,9 @@ function Offer(name, id, service, location, contact, email, website) {
   this.personalContact = contact;
   this.emailAddress = email;
   this.websiteLink = website;
-}
+//}
+//levi old
+
 
 // user interface logic
 $(document).ready(function() {
@@ -54,6 +56,7 @@ Contact.prototype.fullName = function() {
 	return this.Name + " " + this.Identification + " " + this.Phone + " " + this.Email + " " + this.Residence;
 };
 console.log("qwerty");
+
 // user interface logic
 $(document).ready(function() {
 	$("form#blanks").submit(function(event) {
@@ -78,5 +81,13 @@ $(document).ready(function() {
 
 
 	});
->>>>>>> 4d9a2cb42970e92dc51c5bd3bdea290a57bf4805
+
+//david new
+	//$("#myModal").click(function() {
+		//$("#modal").show();
+	//});
+	//$(".close").click(function() {
+	//	$("#modal").hide();
+//	});
+//david new
 });
