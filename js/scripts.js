@@ -1,4 +1,3 @@
-//levi old
 //business logic
 function Offer(name, id, service, location, contact, email, website) {
   this.fullName = name;
@@ -8,8 +7,8 @@ function Offer(name, id, service, location, contact, email, website) {
   this.personalContact = contact;
   this.emailAddress = email;
   this.websiteLink = website;
-//}
-//levi old
+}
+
 
 
 // user interface logic
@@ -28,7 +27,7 @@ $(document).ready(function() {
     var newContact = new Offer(inputtedFullName, inputtedIdNumber, inputtedServiceOffered, inputtedLocation, inputtedPersonalContact, inputtedEmailAddress, inputtedWebsiteLink);
     //console.log(inputtedFullName, inputtedServiceOffered, inputtedPersonalContact);
   });
-=======
+  
 //$(document).ready(function() {
 //$("#blanks").submit(function(event) {
 ///var person1Input = $("input#person1").val();
@@ -82,12 +81,12 @@ $(document).ready(function() {
 
 	});
 
-//david new
+
 	//$("#myModal").click(function() {
 		//$("#modal").show();
 	//});
 	//$(".close").click(function() {
 	//	$("#modal").hide();
 //	});
-//david new
+
 });
