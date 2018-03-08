@@ -27,7 +27,7 @@ $(document).ready(function() {
     var newContact = new Offer(inputtedFullName, inputtedIdNumber, inputtedServiceOffered, inputtedLocation, inputtedPersonalContact, inputtedEmailAddress, inputtedWebsiteLink);
     //console.log(inputtedFullName, inputtedServiceOffered, inputtedPersonalContact);
   });
-  
+
 //$(document).ready(function() {
 //$("#blanks").submit(function(event) {
 ///var person1Input = $("input#person1").val();
@@ -82,11 +82,11 @@ $(document).ready(function() {
 	});
 
 
-	//$("#myModal").click(function() {
-		//$("#modal").show();
-	//});
-	//$(".close").click(function() {
-	//	$("#modal").hide();
-//	});
+	$("#myModal").click(function() {
+		$("#modal").show();
+	});
+	$(".close").click(function() {
+		$("#modal").hide();
+	});
 
 });
