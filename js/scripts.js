@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //business logic
 function Offer(name, id, service, location, contact, email, website) {
   this.fullName = name;
@@ -9,6 +8,8 @@ function Offer(name, id, service, location, contact, email, website) {
   this.emailAddress = email;
   this.websiteLink = website;
 }
+
+
 
 // user interface logic
 $(document).ready(function() {
@@ -26,7 +27,7 @@ $(document).ready(function() {
     var newContact = new Offer(inputtedFullName, inputtedIdNumber, inputtedServiceOffered, inputtedLocation, inputtedPersonalContact, inputtedEmailAddress, inputtedWebsiteLink);
     //console.log(inputtedFullName, inputtedServiceOffered, inputtedPersonalContact);
   });
-=======
+
 //$(document).ready(function() {
 //$("#blanks").submit(function(event) {
 ///var person1Input = $("input#person1").val();
@@ -54,6 +55,7 @@ Contact.prototype.fullName = function() {
 	return this.Name + " " + this.Identification + " " + this.Phone + " " + this.Email + " " + this.Residence;
 };
 console.log("qwerty");
+
 // user interface logic
 $(document).ready(function() {
 	$("form#blanks").submit(function(event) {
@@ -78,5 +80,27 @@ $(document).ready(function() {
 
 
 	});
->>>>>>> 4d9a2cb42970e92dc51c5bd3bdea290a57bf4805
+
+
+	$("#myModal").click(function() {
+		$("#modal").show();
+	});
+	$(".close").click(function() {
+		$("#modal").hide();
+	});
+});
+
+$(document).ready(function() {
+  $('#myModal').attr('disabled', true);
+  $('input:text').keyup(function() {
+    var disable = false;
+    $('input:text').each(function() {
+      if ($(this).val() == "") {
+        disable = true;
+      }
+    });
+    $('#myModal').prop('disabled', disable);
+  });
+});
+
 });
