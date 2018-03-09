@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,35 +7,33 @@
   <link rel="stylesheet " href="css/styles.css " type="text/css ">
   <title>OFFER SERVICES</title>
 </head>
-
-<body>
-  <div class="container ">
-    <div class="jumbotron ">
-      <h2>WELCOME TO THE SUDO GET SERVICE COMMUNITY!! </h2>
+<body id="gio">
+  <div class="container " id="levy">
+    <div class="jumboron ">
+      <h2 id="man">WELCOME TO THE SUDO GET SERVICE COMMUNITY!! </h2>
     </div>
-
     <p>You are one step away from connecting to myriads of people serching for someone with your skills and services.</p>
     <p>Please fill in your details to get started.</p>
-    <form id="new-Offer">
+    <form id="new-Offer" form method="post" action="connect.php">
       <div class="form-group">
         <label for="full name">Full Name:</label>
-        <input type="text" class="form-control" id="new-full-name">
+        <input type="text" class="form-control" id="new-full-name" required/>
       </div>
       <div class="form-group">
         <label for="id">ID:</label>
-        <input type="text" class="form-control" id="new-id">
+        <input type="text" class="form-control" id="new-id" required/>
       </div>
       <div class="form-group">
         <label for="service">Service:</label>
-        <input type="text" class="form-control" id="new-service">
+        <input type="text" class="form-control" id="new-service" required/>
       </div>
       <div class="form-group">
         <label for="location">LOCATION:</label>
-        <input type="text" class="form-control" id="new-location">
+        <input type="text" class="form-control" id="new-location" required/>
       </div>
       <div class="form-group">
         <label for="contact">PERSONAL/BUSINESS CONTACT:</label>
-        <input type="number" class="form-control" id="new-contact">
+        <input type="number" class="form-control" id="new-contact" required/>
       </div>
       <div class="form-group">
         <label for="email">BUSINESS EMAIL ADDRESS (OPTIONAL):</label>
@@ -48,15 +45,22 @@
       </div>
       <p>Please read and agree to our terms and conditions of service before submiting this form.</p>
       <input type="radio"> I agree.<br>
-      <button type="submit">submit</button>
-    </form>
-
-
-  </div>
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-
-
+      <button type="submit" class="btn" data-toggle="modal" id="myModal">submit</button>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">congratulations</h4>
+          </div>
+          <div class="modal-body">
+            <p>Congratulations your information was recieved and secured,you will now be redirected to the home page.</p>
+          </div>
+          <div class="modal-footer">
+          <a href="index.html">  <button type="button" class="btn-default" data-dismiss="modal" name="button">Home</button></a>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.js"></script>
+      <script src="js/scripts.js"></script>
 </body>
-
 </html>

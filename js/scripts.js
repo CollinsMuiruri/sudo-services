@@ -88,5 +88,19 @@ $(document).ready(function() {
 	$(".close").click(function() {
 		$("#modal").hide();
 	});
+});
+
+$(document).ready(function() {
+  $('#myModal').attr('disabled', true);
+  $('input:text').keyup(function() {
+    var disable = false;
+    $('input:text').each(function() {
+      if ($(this).val() == "") {
+        disable = true;
+      }
+    });
+    $('#myModal').prop('disabled', disable);
+  });
+});
 
 });
