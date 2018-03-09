@@ -1,6 +1,7 @@
 #search {
 border: 3px solid white;
-font-family: 'Pacifico', cursive;
+font-family: serif, cursive;
+color: black;
 }
 #search:hover {
   background-color: cyan;
@@ -9,8 +10,9 @@ font-family: 'Pacifico', cursive;
 #submit {
   padding: 2px;
   background-color: white;
-  border:2px solid white;
+  border:4px solid white;
   color: white;
+  margin-top: -5px;
   margin-left: -5px;
   cursor: pointer;
   color: black;
@@ -21,28 +23,30 @@ font-family: 'Pacifico', cursive;
   transition: all 2.0s;
 }
 body#index{
-  background-color: black;
-  background-image: url(../images/hop.jpeg);
+  color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../images/christopher-burns-360244-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
 .homepage {
   color: white;
   font-size: 30px;
-  font-family: 'Pacifico', cursive;
+  font-family: serif, cursive;
 }
 h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: serif, cursive;
   text-align: center;
   color: blue;
 }
-headerjj{
+headerk{
   width: 100%;
   height: 100vh;
-  background-color: black;
-  background-image: url(../mages/dom.jpg);
+  background-color: blacik;
+  background-image: url(../images/dom.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixe;
 }
 
 .ion-navicon{
@@ -54,6 +58,8 @@ headerjj{
   padding-left: 15px 24px;
   cursor: pointer;
   display: block;
+  height: 5em;
+  background: transparent;
 }
 .logo {
   position: absolut;
@@ -119,53 +125,190 @@ nav ul li a {
   font-size: 20px;
 }
 #get-services{
-  background-image: url(../images/copy.gif);
+  background-color: transparent;
   transition: 0.3s;
   border-radius:0 10px 10px 0;
-  border: 3px blue;
+  border: 23px solid rgb(255, 255, 255, 1);
   padding: 10px 20px;
   margin: blue;
   font-size: 28px;
+  width: 20em;
+  height: 2em;
 }
 #get-services:hover{
-  background-color:blue;
-  border: 3px blue;
-
+  font-family: 'Pacifico', cursive;
+  background-color: cyan;
+  box-shadow: 0px 0px 10px rgb(255, 30, 50, 0.5), 0px 0px 10px rgb(255, 30, 50, 1);
   transition: 0.3s;
 }
 
 #offer-services{
-  background-image: url(../images/copy.gif);
+  background-color: transparent;
   border-radius:0 10px 10px 0;
-  border: 3px white;
+  border: 5px solid rgb(255, 255, 255, 1);
   padding: 10px 20px;
   margin: white;
   font-size: 28px;
+  width: 20em;
+  height: 2em;
 }
 #offer-services:hover{
   background-color:cyan;
   transition: 0.3s;
+  box-shadow: 0px 0px 10px rgb(255, 30, 50, 0.5), 0px 0px 10px rgb(255, 30, 50, 1);
+
 }
+
+.btns ul{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+.btns ul li {
+list-style: none;
+border: 5px solid cyan;
+font-size: 15px;
+font-weight: bold;
+margin: 30px;
+font-family: arial;
+border-radius: 15px;
+}
+ .btns ul li a {
+   text-decoration: none;
+   padding: 5px 5px;
+   display: block;
+   text-align: center;
+   border-radius: 15px;
+ }
+
+#lom {
+  color: cyan;
+  font-weight: bold;
+}
+#blink-me {
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#blink-me:hover {
+  animation-play-state :paused;
+}
+@keyframes blinker
+{0%{opacity: 1.0}
+  50%{opacity: 0.0}
+  100%{opacity: 1.0}
+}
+
+
+
 
 
 .player {
   display: none;
 }
 
-.menu {
-  position: fixed;
-  float: right;
-  background:transparent;
+.menu{
+  float: center;
+  background-color:transparent;
   padding-left:  100px;
 }
-/*h2 {
+h2 {
   text-align: center;
+    font-family: serif, cursive;
+    font-size: 50px;
+    color: white;
 }
 
 .requirements {
   text-align: center;
+  font-family: serif,cursive;
+  color: white;
 }
 
 .dist {
-  show: none;
-}*/
+  display:  none;
+  font-family: 'Indie flower',cursive;
+}
+#dav {
+  font-family: serif,cursive;
+  font-size: 40px;
+  font-family: serif, cursive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../images/bus.jpg);
+  background-size: cover;
+  color: white;
+}
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1%;
+  padding-top: 100px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 80%;
+}
+.modal-body{
+  color:black;
+}
+#bus {
+  float:right;
+}
+#gio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../images/gub.jpg);
+    background-size: contain;
+}
+#levy {
+  background-image: url(https://simplywallpapers.com/wallpaper/Audi-R8-cars/15747/);
+  font-style: normal;
+  font-family: 'Indie flower',cursive;
+  font-size: 25px;
+  color: white;
+}
+#man {
+  font-style: italic;
+  font-family: 'Indie flower',cursive;
+}
+
+
+
+#about {
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+.tf {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/Boardroom.jpg);
+  background-size: cover;
+  padding-top: 105px;
+  position: center;
+}
+
+#termy {
+  color:white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/Boardroom.jpg);
+  font-size: 25px;
+  background-size: contain;
+}
+h4 {
+  color: cyan;
+  font-size: 45px;
+  font-family: 'Indie flower',cursive;
+}
