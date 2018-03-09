@@ -24,7 +24,7 @@ color: black;
 }
 body#index{
   color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../images/tom.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../images/christopher-burns-360244-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
